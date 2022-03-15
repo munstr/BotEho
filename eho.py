@@ -1,7 +1,8 @@
+import os
 import telebot
 from flask import Flask, request
 
-bot = telebot.TeleBot("5254391359:AAHHzp56Sx79SP0q9MrsRc3klaXwUAk21Do")
+bot = telebot.TeleBot(os.environ["token"])
 
 server = Flask(__name__)
 
