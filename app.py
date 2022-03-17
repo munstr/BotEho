@@ -4,7 +4,7 @@ import flask
 
 bot = telebot.TeleBot(token)
 
-server = Flask(__name__)
+server = flask.Flask(__name__)
 
 @bot.message_handler(content_types=["text"])
 def repeat_all_messages(message):
