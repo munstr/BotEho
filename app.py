@@ -1,6 +1,6 @@
 import os
 import telebot
-from flask import Flask, request
+import flask
 
 bot = telebot.TeleBot(token)
 
